@@ -1,0 +1,418 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.box{
+    width: 1000px;
+    height: 800px;
+    position:absolute;
+	overflow: hidden;
+	border-radius:8px;
+	top: -50%;
+	left: 50%;
+	margin-left: -500px;
+	margin-top:-370px;
+	box-shadow:0 0 0 1px hsla(0,0%,100%,.3) inset,0 .5em 1em rgba(0, 0, 0, 0);
+	z-index: 10;
+	backdrop-filter: blur(8px);
+	box-shadow: 0 0 10px #333;
+	animation: move11 2s;
+}
+
+.left{width: 350px;
+	height: 800px;
+	float: left;
+	background: url(../imags/a.jpeg) no-repeat;
+	background-size: 140%;
+	background-position:-130px 0px;
+}
+.right{
+	margin-left: 350px;
+	width: 650px;
+	height: 800px;
+	text-align: center;
+}
+h4{
+	color:rgb(88, 88, 88);
+	font-size: 40px;
+	margin-top: 20px;
+}
+.acc{
+	width: 350px;
+	height: 30px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: orchid 10px;
+	background-color: rgba(255, 254, 254, 0);
+	font-size: 20px;
+}
+.submit{
+	width: 300px;
+	height: 40px;
+	background-color: rgba(196, 196, 196, 0.151);
+	border: none;
+	margin: 0 auto;
+	border-radius: 7px;
+	border-radius:8px;
+	font-size: 14px;
+	box-shadow:0 0 0 0.5px hsla(0,0%,100%,.3) inset,0 .1em .5em rgba(0,0,0,0.6);
+	cursor: pointer;
+}
+.kuang1,.kuang2{
+	width: 350px;
+	height: 30px;
+	margin: 0 auto;
+	border-bottom: rgb(107, 107, 107) 1.3px solid;
+}
+.kuang1,.kuang2{
+	margin-top: 20px;
+}
+.submit1{
+	margin-top: 50px;
+}
+.fn{
+	width: 650px;
+	height: 40px;
+	font-size: 20px;
+	text-align: left;
+}
+.fn a{
+	text-decoration: none;
+	color:rgb(65, 65, 65) ;
+	float: left;
+	margin-top: 40px;
+}
+.zhuche{
+	margin-left: 110px;
+}
+.zhaohui{
+	margin-left: 470px;
+}
+.fn a:hover{
+	text-decoration: underline;
+}
+.submit:hover{
+	box-shadow:0 0 0 0.5px hsla(0,0%,100%,.3) inset,0 .2em 1em rgba(0,0,0,0.6);
+}
+.kuang1 input[type=text]:focus { 
+    outline: none;
+}
+.kuang2 input[type=password]:focus { 
+    outline: none;
+}
+.chacha{
+	width: 20px;
+	height: 20px;
+	background: url(..//imags/chacha.png);
+	background-size: 100%;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.chacha:hover{
+	background:url(..//imags/chacha2.png);
+	background-size: 100%;
+}
+.worning{
+	width: 2000px;
+	height: 1125px;
+	background: url(..//imags/1.png);
+	background-size: 100% 100%;
+	z-index: -2;
+}	
+label{
+	display:block;
+	margin-top: 10px;
+	color: rgb(0, 0, 0, 0);
+}
+.right1{
+	display:block;
+	margin-top: 10px;
+	color: #00ff8000;
+	pointer-events: none;
+}
+.wrong{
+	display:block;
+	margin-top: 10px;
+	color: red;
+	pointer-events: none;
+}
+@keyframes move11 {
+	0%{
+		top: -100%;
+	}
+	100%{
+		top: 50%;
+	}
+}
+@keyframes move21 {
+	0%{
+		top: 50%;
+	}
+	100%{
+		top: -100%;
+	}
+}
+.box{animation-fill-mode:forwards;}
+.d1{
+	position: absolute;
+	font-size: 20px;
+	top: 115px;
+}
+.d2{
+	position: absolute;
+	font-size: 20px;
+	top: 194px;
+}
+.d3{
+	position: absolute;
+	font-size: 20px;
+	top: 280px;
+}
+.d4{
+	position: absolute;
+	font-size: 20px;
+	top: 362px;
+}
+.d5{
+	position: absolute;
+	font-size: 20px;
+	top: 440px;
+}
+.d6{
+	position: absolute;
+	font-size: 20px;
+	top: 526px;
+}
+.d1,.d2,.d3,.d3,.d4,.d5,.d6	{
+	pointer-events: none;
+	color: #554e45b2;
+}
+label{
+	transition: all 0.3s; 
+}
+.underline{
+	position: relative;
+	height: 1px;
+	width: 350px;
+	background-color:  rgb(107, 107, 107);
+	margin-top: -1.5px;
+	transform: rotateX(0);
+}
+.underline1{
+	position: relative;
+	height: 1px;
+	width: 350px;
+	background-color:  rgb(107, 107, 107);
+	margin-top: -1.9px;
+}
+
+.underline::before{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #122644;
+	transform: scaleX(0);
+	transition: all 0.3s; 
+}
+input:focus ~ .underline::before{
+	transform: scaleX(1);
+}
+.underline1::before{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color:#122644 ;
+	transform: scaleX(0);
+	transition: all 0.3s; 
+}
+input:focus ~ .underline1::before{
+	transform: scaleX(1.0);
+}
+label{
+	pointer-events: none;
+}
+.nbxieyi{
+	width: 650px;
+	height: 30px;
+	margin-left: 0px;
+	text-align: center;
+}
+#check{
+	margin-left: -250px;
+}
+
+@keyframes  move2{
+	0%{
+		margin-left: 170px;
+	}
+	10%{
+		margin-left: 190px;
+	}
+	20%{
+		margin-left: 170px;
+	}
+	30%{
+		margin-left: 190px;
+	}
+	40%{
+		margin-left: 170px;
+	}
+	50%{
+		margin-left:190px ;
+	}
+	60%{
+		margin-left: 170px;
+	}
+	70%{
+		margin-left:190px ;
+	}
+	80%{
+		margin-left: 170px;
+	}
+	90%{
+		margin-left:190px ;
+	}
+	100%{
+		margin-left: 180px;
+	}
+}
+
+@keyframes  move3{
+	0%{
+		margin-left: 330px;
+	}
+	10%{
+		margin-left: 350px;
+	}
+	20%{
+		margin-left: 330px;
+	}
+	30%{
+		margin-left: 350px;
+	}
+	40%{
+		margin-left: 330px;
+	}
+	50%{
+		margin-left:350px ;
+	}
+	60%{
+		margin-left: 330px;
+	}
+	70%{
+		margin-left:350px ;
+	}
+	80%{
+		margin-left: 330px;
+	}
+	90%{
+		margin-left:350px ;
+	}
+	100%{
+		margin-left: 340px;
+	}
+}
+.nb-right{
+	color: #353a33;
+	width: 200px;
+	height: 30px;
+	margin-top: -21px;
+	margin-left: 180px;
+}
+.nb-wrong{
+	color: #353a33;
+	width: 200px;
+	height: 30px;
+	margin-top: -21px;
+	margin-left: 180px;
+	animation: move2 0.3s;
+}
+.xy-right{
+	color: #8cdbf9;
+	float: left;
+	margin-top: -30px;
+	margin-left: 340px;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+.xy-wrong{
+	color: #8cdbf9;
+	float: left;
+	margin-top: -30px;
+	margin-left: 340px;
+	font-size: 16px;
+	transition: all 0.3s;
+	animation: move3 0.3s;
+}
+.box3{
+	width: 250px;
+	height: 150px;
+	border: 1px rgb(0, 0, 0) solid;
+	position: absolute;
+	top: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 10%;
+	z-index: 2;
+	backdrop-filter: blur(30px);
+	border-radius: 10px;
+}
+.ai12{
+	width: 150px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 30%;
+}
+.c12{
+	width: 20px;
+	height: 20px;
+}
+.ai13{
+	width: 150px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 60%;
+}
+.c13{
+	width: 20px;
+	height: 20px;
+}
+.filter{
+	position: absolute;
+	font-size: 16px;
+	top: 25px;
+	color: #111111b2;
+}
+.imags{
+	position: absolute;
+	font-size: 16px;
+	top: 70px;
+	color: #111111b2;
+}
+.loadinging{
+	animation: move22 2s;
+}
+
+#loading{
+	position: fixed;
+	z-index: -200;
+	width: 100%;
+	height: 100vh;
+	animation: move22 2s;
+	backdrop-filter: blur(15px);
+}
